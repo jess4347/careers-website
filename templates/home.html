@@ -12,38 +12,41 @@
     }
   </style>
 </head>
-<body>
-    
-   <h1 class="text-center mt-5 mb-10">Career Details</h1>
-  <h3 style="text-align:center">{{company_name}}</h3>
-  <img class="img-fluid" id="banner"src="https://2efe6935-46b2-4ffe-a62d-0f3681a1b54a-00-vew4tlccp3ea.sisko.replit.dev/static/career.jpg
-    " >
-  <div class="container">
-    <h2 class="text-center">About Jovian</h2>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit justo vel turpis laoreet sagittis. Nullam nec ultrices mi. Vestibulum non vehicula sapien. Maecenas quis convallis odio. Nam ultrices, libero sed condimentum consectetur, tortor risus luctus dolor, ac sodales massa velit eu libero.</p>
-    <br>
-    <br>
-    <hr>
-    <hr>
-    <br>
-    <div class="text-center">
-    <h2 class="text-center">Open Positions</h2>
-   
-      <div>
-        {% for job in jobs %}
-        <div>
-          {% include 'jobitem.html' %}
-        </div>
 
-        {% endfor %}
-      </div>
-     
+
+  
+<body>
+
+
+  
+{% include 'nav.html' %}
+  <img class="img-fluid" id="banner"src="https://2efe6935-46b2-4ffe-a62d-0f3681a1b54a-00-vew4tlccp3ea.sisko.replit.dev/static/career.jpg
+  " >
+  <div class="container" style="margin-bottom:10%">
+    <h1 class="text-center mt-5 mb-10">Career Details</h1>
+    <h3 style="text-align:center">{{company_name}}</h3>
+    <div class="row" style="margin-bottom:10%">
+          <div class="col-md-6">
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.          Utdffhjkdsfnjkdnfjkdnfjkdsnjkd fidofhv fdf  dg vdfgg  fgref n gntyjy sfds grthf gf hh vfvf fvbbdfbjhdjkh difhj fhud;ih fudislhl efhiohfio </p>
+          </div>
+          <div class="col-md-6">
+              <img class="img-fluid"src="/static/people.jpg" style="height:320px border-radius:4px">
+          </div>
+    </div>
+    <div class="text-center" style="margin-bottom:10%">
+        <h2 class="text-center mt-8 mb-4">Open Positions</h2>
+        <div style="margin-bottom:10%">
+            {% for job in jobs %}
+            <div>
+              {% include 'jobitem.html' %}
+            </div>
+            {% endfor %}
+        </div>
       <p class="mt-4">Copyright 2022 @Jovian</p>
       <button class="btn btn-primary btn-lg">Contact us</button>
     </div>
-    
   </div>
-  
+  {% include 'footer.html' %}
   
 </body>
 </html>
